@@ -1,6 +1,8 @@
 import streamlit as st
 import numpy as np
 import pickle
+import pickle
+import xgboost  # Required so pickle can resolve the XGBoost classes
 
 # Load the trained model
 with open("model.pkl", "rb") as f:
